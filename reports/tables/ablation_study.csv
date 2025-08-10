@@ -1,0 +1,6 @@
+Configuration,memory_reduction,recall,time_ms
+Full QRAG (4-bit + 8-bit),2.3,0.695,4.2
+8-bit residuals + 8-bit E1,1.8,0.742,4.0
+4-bit residuals + float32 E1,1.6,0.715,4.1
+No quantization + PCA,1.2,0.785,3.8
+Full precision baseline,1.0,0.8,5.2

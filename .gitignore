@@ -1,8 +1,6 @@
 .venv/
 __pycache__/
 *.pyc
-reports/
-results/
 *.DS_Store
 
 
