@@ -1,0 +1,62 @@
+{
+  "dataset": "glove-100",
+  "n_docs": 50000,
+  "embedding_dim": 100,
+  "baseline_memory_fp32_mb": 20.0,
+  "baselines": {
+    "Flat": {
+      "recall_at_10": 1.0,
+      "memory_mb": 20.0
+    },
+    "IVF-Flat": {
+      "recall_at_10": 0.9925,
+      "memory_mb": 20.3576
+    },
+    "IVF-PQ": {
+      "recall_at_10": 0.593,
+      "memory_mb": 0.8576
+    },
+    "HNSW": {
+      "recall_at_10": 0.9915,
+      "memory_mb": 45.6
+    }
+  },
+  "qrag_sweep": [
+    {
+      "label": "QRAG-8",
+      "recall": 0.3685,
+      "memory_mb": 4.500864,
+      "latency_ms": 0.25784969329833984
+    },
+    {
+      "label": "QRAG-16",
+      "recall": 0.6145,
+      "memory_mb": 6.500928,
+      "latency_ms": 0.25867223739624023
+    },
+    {
+      "label": "QRAG-32",
+      "recall": 0.8105000000000001,
+      "memory_mb": 10.501056,
+      "latency_ms": 0.2637064456939697
+    },
+    {
+      "label": "QRAG-48",
+      "recall": 0.8959999999999999,
+      "memory_mb": 14.501183999999999,
+      "latency_ms": 0.27187466621398926
+    },
+    {
+      "label": "QRAG-64",
+      "recall": 0.9245000000000002,
+      "memory_mb": 18.501312,
+      "latency_ms": 0.29379844665527344
+    }
+  ],
+  "qrag_best": {
+    "label": "QRAG-64",
+    "recall": 0.9245000000000002,
+    "memory_mb": 18.501312,
+    "latency_ms": 0.29379844665527344
+  }
+}

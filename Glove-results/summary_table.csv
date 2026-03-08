@@ -1,0 +1,10 @@
+method,recall_at_10,memory_mb,compression_vs_flat
+Flat,1.0000,20.0,1.00x
+IVF-Flat,0.9925,20.4,0.98x
+IVF-PQ,0.5930,0.9,23.32x
+HNSW,0.9915,45.6,0.44x
+QRAG-8,0.3685,4.5,4.44x
+QRAG-16,0.6145,6.5,3.08x
+QRAG-32,0.8105,10.5,1.90x
+QRAG-48,0.8960,14.5,1.38x
+QRAG-64,0.9245,18.5,1.08x
