@@ -1,0 +1,83 @@
+{
+  "fiqa": {
+    "qrag_pts": [
+      {
+        "label": "QRAG-32",
+        "projection_dim": 32,
+        "recall": 0.8596,
+        "recall_std": 0.1518151507590728,
+        "memory_mb": 31.0144,
+        "latency_ms": 5.764980792999268,
+        "pca_variance": 0.44121259450912476
+      },
+      {
+        "label": "QRAG-64",
+        "projection_dim": 64,
+        "recall": 0.916,
+        "recall_std": 0.10071742649611337,
+        "memory_mb": 40.134656,
+        "latency_ms": 5.870663642883301,
+        "pca_variance": 0.5940740704536438
+      },
+      {
+        "label": "QRAG-96",
+        "projection_dim": 96,
+        "recall": 0.9428,
+        "recall_std": 0.07271973597311804,
+        "memory_mb": 49.254912000000004,
+        "latency_ms": 5.7814154624938965,
+        "pca_variance": 0.6889939308166504
+      },
+      {
+        "label": "QRAG-128",
+        "projection_dim": 128,
+        "recall": 0.9514000000000001,
+        "recall_std": 0.062113122607062664,
+        "memory_mb": 58.375168,
+        "latency_ms": 5.85734224319458,
+        "pca_variance": 0.7585076093673706
+      },
+      {
+        "label": "QRAG-192",
+        "projection_dim": 192,
+        "recall": 0.95,
+        "recall_std": 0.06340346993658942,
+        "memory_mb": 76.61568,
+        "latency_ms": 6.029051780700684,
+        "pca_variance": 0.8536163568496704
+      },
+      {
+        "label": "QRAG-256",
+        "projection_dim": 256,
+        "recall": 0.9538000000000002,
+        "recall_std": 0.06233426024266269,
+        "memory_mb": 94.856192,
+        "latency_ms": 6.244412899017334,
+        "pca_variance": 0.9124026894569397
+      },
+      {
+        "label": "QRAG-384",
+        "projection_dim": 384,
+        "recall": 0.9548000000000001,
+        "recall_std": 0.06129404538778624,
+        "memory_mb": 131.337216,
+        "latency_ms": 6.685989856719971,
+        "pca_variance": 0.9650712013244629
+      }
+    ],
+    "baselines": {
+      "Flat": 1.0,
+      "IVF-Flat": 0.998,
+      "IVF-PQ": 0.7356,
+      "HNSW": 0.9924000000000001
+    },
+    "base_mem": {
+      "Flat": 175.104,
+      "IVF-Flat": 178.034688,
+      "IVF-PQ": 8.402688,
+      "HNSW": 189.696
+    },
+    "fp32_mb": 175.104,
+    "n_docs": 57000
+  }
+}
