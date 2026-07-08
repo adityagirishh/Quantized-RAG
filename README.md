@@ -1,6 +1,5 @@
 # Memory-Optimized QRAG: Dual-Quantized Retrieval with On-Demand Reconstruction
 
-> **NeurIPS 2025 Workshop Submission**
 > Aditya Girish et al., 2025
 
 QRAG is a memory-efficient retrieval method for Retrieval-Augmented Generation (RAG) pipelines. It compresses embedding corpora via **dual-level quantization** — 8-bit PCA projections (E1) and 4-bit residuals — and reconstructs embeddings on-demand at query time, achieving high recall at a fraction of the memory cost of full-precision storage.
